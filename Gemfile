@@ -4,10 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.6.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'validates_timeliness', '4.0.2'
-gem 'swagger-docs'
 gem 'rails', '5.2.4.4'
-gem 'factory_bot_rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -43,6 +40,15 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'validates_timeliness'
+
+gem 'factory_bot_rails'
+
+gem 'swagger-docs'
+
+gem 'fast_jsonapi'
+
+gem 'rack-cors'
